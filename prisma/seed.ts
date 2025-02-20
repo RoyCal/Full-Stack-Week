@@ -15,7 +15,7 @@ const main = async () => {
         avatarImageUrl:
           "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQvcNP9rHlEJu1vCY5kLqzjf29HKaeN78Z6pRy",
         coverImageUrl:
-          "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQU3JZGQeTmvPeJLoyOjzNsMqFdxUI423nBl6b",
+          "https://s3-alpha-sig.figma.com/img/2fb0/62d3/71592c3ef244ecf6491e7a182f976744?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=G8iuOsoVnJmmfP9C~tTriQ3D-KTlqBt-eYxM8g13No0PgBlk~tnFO~dJGp-7M~bC913YpbxAdXqjnVeNynRJpOJdv2d4OMwJJ5ekZzNY7-145ACS69Bg12e5t~Ulj51s2ur7OBcWYRoB0yNoldUpOEkaQrC6aeIQfmLbs6CbHkozfxQcOK9iFD6Xpv9H08zFfnJY~bx8AbMwd7t5fHFBWG-u07FHjBaCFi~1vijTSTGXIbm15ED~JREjLAT3gWAoIcyRVbP9ACjV-BCeiqB32R6p-zVvbjLuMIwun7jCk-tGzMFpuwA5cjjUYGoH6xyiq1dqIr6zOS9E3MLFoRpCcw__",
       },
     });
     const combosCategory = await tx.menuCategory.create({
