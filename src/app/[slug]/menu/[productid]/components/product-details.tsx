@@ -16,7 +16,7 @@ interface ProductDetailsProps {
 }
 
 const ProductDetails = ({product}: ProductDetailsProps) => {
-    const {toggleCart} = useContext(CartContext);
+    const {toggleCart, addProduct} = useContext(CartContext);
     const [quantity, setQuantity] = useState<number>(1); 
     const handleMinusClick = () => setQuantity((prev) => {
         if(prev === 1) {
@@ -26,7 +26,13 @@ const ProductDetails = ({product}: ProductDetailsProps) => {
         return prev - 1
     });
     const handlePlusClick = () => setQuantity((prev) => prev + 1);
-    const handleAddToCart = () => toggleCart();
+    const handleAddToCart = () => {
+        addProduct({
+            ...product,
+            quantity: quantity
+        })
+        toggleCart()
+    };
     return (
         <>
             <div className="relative z-50 rounded-t-3xl p-5 mt-[-1.5rem] flex-auto flex-col flex overflow-hidden">
