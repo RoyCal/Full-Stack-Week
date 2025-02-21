@@ -1,0 +1,43 @@
+COMANDOS UTILIZADOS
+
+npx create-next-app@15.1.6 .
+
+foi marcado "Yes" para: TypeScript, ESLint, Tailwind CSS, código dentro de um diretório '/src' e App Router
+foi marcado "No" para Turbopack e import alias
+
+
+
+npm install prisma@6.2.1
+npm install @prisma/client@6.2.1
+npx prisma init
+
+npx prisma migrate dev
+
+npm install -D ts-node@10.9.2
+
+para rodar o arquivo de seed adicione no package.json: "prisma": {"seed": "ts-node .prisma/seed.ts"}
+npx prisma db seed
+
+
+
+npx shadcn@2.3.0 init
+style: Default
+base color: Neutral
+CSS variables: yes
+Use --legacy-peer-deps
+
+npx shadcn@2.3.0 add {nome do componente}
+
+
+
+npx install -D eslint-plugins-simple-import-sort@12.1.1 (para ajudar a ordenar os imports)
+
+foi criada uma pasta .vscode na raiz do projeto com um arquivo settings.json que configura para o eslint automaticamente corrigir os arquivos sempre que forem salvos
+
+npm install -D prettier-plugin-tailwindcss@0.6.5 (ordenar as classes do tailwind com um padrão)
+
+foi criado um arquivo prettierre.json na raiz do projeto que contém apenas "{"plugins": ["prettier-plugin-tailwindcss"]}"
+
+
+
+
