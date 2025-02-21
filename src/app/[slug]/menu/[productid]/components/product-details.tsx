@@ -36,7 +36,7 @@ const ProductDetails = ({product}: ProductDetailsProps) => {
     return (
         <>
             <div className="relative z-50 rounded-t-3xl p-5 mt-[-1.5rem] flex-auto flex-col flex overflow-hidden">
-                <div className="flex-auto overflow-hidden">
+                <div className="flex-auto overflow-hidden flex flex-col">
                     <div className="flex items-center gap-1.5">
                         <Image src={product.restaurant.avatarImageUrl} alt={product.restaurant.name} width={16} height={16} className="rounded-full"/>
                         <p className="gap-1 text-xs text-muted-foreground">{product.restaurant.name}</p>
