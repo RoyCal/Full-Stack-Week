@@ -1,4 +1,4 @@
-import { getRestaurantBySlug } from "@/data/get-restaurant-by-slug";
+import { getRestaurantBySlug } from "../data/get-restaurant-by-slug";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
